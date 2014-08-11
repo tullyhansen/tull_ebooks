@@ -3,7 +3,7 @@
 require 'twitter_ebooks'
 include Ebooks
 
-CONSUMER_KEY = "***REMOVED***"
+CONSUMER_KEY = ENV['CONSUMER_KEY']
 CONSUMER_SECRET = "***REMOVED***"
 OATH_TOKEN = "***REMOVED***" # oauth token for ebooks account
 OAUTH_TOKEN_SECRET = "***REMOVED***" # oauth secret for ebooks account
