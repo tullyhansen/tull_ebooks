@@ -3,10 +3,11 @@
 require 'twitter_ebooks'
 include Ebooks
 
+# Note: try not to upload private keys to public git repository (thank you #based @ckolderup)
 CONSUMER_KEY = ENV['CONSUMER_KEY']
-CONSUMER_SECRET = "***REMOVED***"
-OATH_TOKEN = "***REMOVED***" # oauth token for ebooks account
-OAUTH_TOKEN_SECRET = "***REMOVED***" # oauth secret for ebooks account
+CONSUMER_SECRET = ENV['CONSUMER_SECRET']
+OATH_TOKEN = ENV['OATH_TOKEN'] # oauth token for ebooks account
+OAUTH_TOKEN_SECRET = ENV['OAUTH_TOKEN_SECRET'] # oauth secret for ebooks account
 
 ROBOT_ID = "ebooks" # Avoid infinite reply chains
 TWITTER_USERNAME = "tull_ebooks" # Ebooks account username
